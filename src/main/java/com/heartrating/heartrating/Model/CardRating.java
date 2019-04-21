@@ -20,5 +20,5 @@ public class CardRating {
     @JoinColumn(name="card_id")
     @JsonIgnore
 
-    Card card;
+    private Card card;
 }

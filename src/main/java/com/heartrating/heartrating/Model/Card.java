@@ -21,7 +21,6 @@ public class Card {
     @OneToMany(
             orphanRemoval = true
     )
-  //  @JoinTable(name = "card_rating", joinColumns = @JoinColumn(name = "card_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "rating_id", referencedColumnName = "id"))
     private List<CardRating> cardRatings;
 }
 
