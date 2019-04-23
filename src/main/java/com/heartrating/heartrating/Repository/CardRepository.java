@@ -6,7 +6,9 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
 
-@RepositoryRestResource(collectionResourceRel = "cards", path="cards")
+@RepositoryRestResource(collectionResourceRel = "cards", path="cardsREST")
 public interface CardRepository extends JpaRepository<Card, Long> {
-    public List<Card> findAll();
+     List<Card> findAll();
+     Card save(Card card);
+     Card getOne(Long id);
         }
