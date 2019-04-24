@@ -19,6 +19,8 @@ public class Card {
     private Long id;
     private String name;
     private String imageURL;
+    private String card_class;
+    private String card_type;
 
 
     @OneToMany(
