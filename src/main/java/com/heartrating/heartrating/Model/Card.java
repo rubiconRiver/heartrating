@@ -1,6 +1,5 @@
 package com.heartrating.heartrating.Model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,6 +20,7 @@ public class Card {
     private String imageURL;
     private String card_class;
     private String card_type;
+    private String rarity;
 
 
     @OneToMany(
